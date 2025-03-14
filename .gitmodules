@@ -1,0 +1,3 @@
+[submodule "libs/wibotlib4arm"]
+	path = libs/wibotlib4arm
+	url = ../wibotlib4arm.git
