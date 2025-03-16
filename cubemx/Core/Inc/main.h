@@ -57,38 +57,18 @@ void Error_Handler(void);
 /* USER CODE END EFP */
 
 /* Private defines -----------------------------------------------------------*/
-#define ADC1_IN0_OVP_Pin GPIO_PIN_0
-#define ADC1_IN0_OVP_GPIO_Port GPIOA
-#define GPO_PWEN_Pin GPIO_PIN_1
-#define GPO_PWEN_GPIO_Port GPIOA
-#define GPI_N_PWSW_Pin GPIO_PIN_2
-#define GPI_N_PWSW_GPIO_Port GPIOA
-#define GPO_LED1_Pin GPIO_PIN_3
-#define GPO_LED1_GPIO_Port GPIOA
-#define GPO_LED2_Pin GPIO_PIN_4
-#define GPO_LED2_GPIO_Port GPIOA
-#define GPO_LED3_Pin GPIO_PIN_5
-#define GPO_LED3_GPIO_Port GPIOA
-#define GPO_LED4_Pin GPIO_PIN_6
-#define GPO_LED4_GPIO_Port GPIOA
-#define GPO_LED5_Pin GPIO_PIN_7
-#define GPO_LED5_GPIO_Port GPIOA
-#define GPO_LED6_Pin GPIO_PIN_0
-#define GPO_LED6_GPIO_Port GPIOB
-#define GPO_LED7_Pin GPIO_PIN_8
-#define GPO_LED7_GPIO_Port GPIOA
-#define GPI_MTON_Pin GPIO_PIN_6
-#define GPI_MTON_GPIO_Port GPIOC
-#define ADC1_IN15_OCP_Pin GPIO_PIN_11
-#define ADC1_IN15_OCP_GPIO_Port GPIOA
-#define GPI_N_LTSW_Pin GPIO_PIN_15
-#define GPI_N_LTSW_GPIO_Port GPIOA
+#define ADC1_IN2_OPP1_Pin GPIO_PIN_2
+#define ADC1_IN2_OPP1_GPIO_Port GPIOA
+#define ADC1_IN3_OPP2_Pin GPIO_PIN_3
+#define ADC1_IN3_OPP2_GPIO_Port GPIOA
+#define ADC1_IN8_NTC_Pin GPIO_PIN_0
+#define ADC1_IN8_NTC_GPIO_Port GPIOB
+#define ADC1_IN9_OCP_Pin GPIO_PIN_1
+#define ADC1_IN9_OCP_GPIO_Port GPIOB
 #define TIM1_CH2_PWM_Pin GPIO_PIN_3
 #define TIM1_CH2_PWM_GPIO_Port GPIOB
-#define GPO_LTEN_Pin GPIO_PIN_6
-#define GPO_LTEN_GPIO_Port GPIOB
-#define ADC1_IN11_NTC_Pin GPIO_PIN_7
-#define ADC1_IN11_NTC_GPIO_Port GPIOB
+#define GPI_OTP_Pin GPIO_PIN_5
+#define GPI_OTP_GPIO_Port GPIOB
 
 /* USER CODE BEGIN Private defines */
 

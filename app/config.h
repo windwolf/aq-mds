@@ -5,29 +5,53 @@
 extern "C" {
 #endif
 
-#define APP_NAME    "Wibotlib4arm_project_template"
-#define APP_VERSION "1.0"
+#define APP_NAME    "AQ-DCD24"
+#define APP_VERSION "1.6"
 
-#define MOTOR_PWM_FREQ_HZ          10000
-#define MOTOR_SOFT_ON_DURATION_MS  1000
-#define MOTOR_SOFT_OFF_DURATION_MS 1000
+#define PWM_FREQ_HZ          10000
+#define SOFT_ON_DURATION_MS  1000
+#define SOFT_OFF_DURATION_MS 1000
 
-#define OVER_CURRENT_THRESHOLD_AMP  150
-#define OVER_VOLTAGE_THRESHOLD_VOLT 80
-#define OVER_TEMP_THRESHOLD_CELSIUS 100
+// 驱动过流阈值
+#define OCP_THRESHOLD_A 70
 
-/* BASE ON HW */
+// 驱动过温阈值
+#define OTP_NTC_THRESHOLD_CELSIUS 100
+
+// 工作压力阈值
+#define OPP_THRESHOLD_MA 10  // 10 mA
+
+// 空闲检测时间
+#define IDLE_TIMEOUT_MS 5000
+
+// 节能模式占空比
+#define IDEL_DUTY 300
+#define DUTY_MAX  1000
+
+// --- BASE ON HW ------------------
 #define VREF_VOLT     (3.3)
 #define SHUNT_RES_OHM (0.001)
 #define CURR_OPA_GAIN (11.0)
 
-#define VBUS_DIV_GAIN (11 / (100.0 + 11))
+// ADC
+#define ADC_IDX_OPP1 0
+#define ADC_IDX_OPP2 1
+#define ADC_IDX_NTC  2
+#define ADC_IDX_OCP  3
 
+// NTC
 #define V0_VOLT       (1.055)
 #define T0_CELSIUS    (25.0)
 #define DV_OVER_DT_VC (0.0249)
 
-#define ERROR_CD_COUNT 5000  // in ISR tick
+// OPP
+//#define OPP_MAX_KPA       (6000)
+//#define OPP_MIN_KPA       (0)
+#define OPP_MAX_CURR_MA   (20)
+#define OPP_MIN_CURR_MA   (4)
+#define OPP_SHUNT_RES_OHM (150)
+
+#define ERROR_CD_COUNT (5000)  // in ISR tick
 
 #ifdef __cplusplus
 }

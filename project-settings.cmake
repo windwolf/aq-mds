@@ -1,5 +1,5 @@
 # TODO: 项目名称
-set(PROJECT_NAME "Wibotlib4arm_project_template")
+set(PROJECT_NAME "AQ-MDS24")
 
 set(WIBOTLIB_PATH "libs/wibotlib4arm")
 

@@ -67,7 +67,7 @@ void MX_ADC1_Init(void)
 
   /** Configure Regular Channel
   */
-  sConfig.Channel = ADC_CHANNEL_0;
+  sConfig.Channel = ADC_CHANNEL_2;
   sConfig.Rank = ADC_RANK_CHANNEL_NUMBER;
   if (HAL_ADC_ConfigChannel(&hadc1, &sConfig) != HAL_OK)
   {
@@ -76,7 +76,7 @@ void MX_ADC1_Init(void)
 
   /** Configure Regular Channel
   */
-  sConfig.Channel = ADC_CHANNEL_11;
+  sConfig.Channel = ADC_CHANNEL_3;
   if (HAL_ADC_ConfigChannel(&hadc1, &sConfig) != HAL_OK)
   {
     Error_Handler();
@@ -84,7 +84,15 @@ void MX_ADC1_Init(void)
 
   /** Configure Regular Channel
   */
-  sConfig.Channel = ADC_CHANNEL_15;
+  sConfig.Channel = ADC_CHANNEL_8;
+  if (HAL_ADC_ConfigChannel(&hadc1, &sConfig) != HAL_OK)
+  {
+    Error_Handler();
+  }
+
+  /** Configure Regular Channel
+  */
+  sConfig.Channel = ADC_CHANNEL_9;
   if (HAL_ADC_ConfigChannel(&hadc1, &sConfig) != HAL_OK)
   {
     Error_Handler();
@@ -110,19 +118,20 @@ void HAL_ADC_MspInit(ADC_HandleTypeDef* adcHandle)
     __HAL_RCC_GPIOA_CLK_ENABLE();
     __HAL_RCC_GPIOB_CLK_ENABLE();
     /**ADC1 GPIO Configuration
-    PA0     ------> ADC1_IN0
-    PA11 [PA9]     ------> ADC1_IN15
-    PB7     ------> ADC1_IN11
+    PA2     ------> ADC1_IN2
+    PA3     ------> ADC1_IN3
+    PB0     ------> ADC1_IN8
+    PB1     ------> ADC1_IN9
     */
-    GPIO_InitStruct.Pin = ADC1_IN0_OVP_Pin|ADC1_IN15_OCP_Pin;
+    GPIO_InitStruct.Pin = ADC1_IN2_OPP1_Pin|ADC1_IN3_OPP2_Pin;
     GPIO_InitStruct.Mode = GPIO_MODE_ANALOG;
     GPIO_InitStruct.Pull = GPIO_NOPULL;
     HAL_GPIO_Init(GPIOA, &GPIO_InitStruct);
 
-    GPIO_InitStruct.Pin = ADC1_IN11_NTC_Pin;
+    GPIO_InitStruct.Pin = ADC1_IN8_NTC_Pin|ADC1_IN9_OCP_Pin;
     GPIO_InitStruct.Mode = GPIO_MODE_ANALOG;
     GPIO_InitStruct.Pull = GPIO_NOPULL;
-    HAL_GPIO_Init(ADC1_IN11_NTC_GPIO_Port, &GPIO_InitStruct);
+    HAL_GPIO_Init(GPIOB, &GPIO_InitStruct);
 
     /* ADC1 DMA Init */
     /* ADC1 Init */
@@ -160,13 +169,14 @@ void HAL_ADC_MspDeInit(ADC_HandleTypeDef* adcHandle)
     __HAL_RCC_ADC_CLK_DISABLE();
 
     /**ADC1 GPIO Configuration
-    PA0     ------> ADC1_IN0
-    PA11 [PA9]     ------> ADC1_IN15
-    PB7     ------> ADC1_IN11
+    PA2     ------> ADC1_IN2
+    PA3     ------> ADC1_IN3
+    PB0     ------> ADC1_IN8
+    PB1     ------> ADC1_IN9
     */
-    HAL_GPIO_DeInit(GPIOA, ADC1_IN0_OVP_Pin|ADC1_IN15_OCP_Pin);
+    HAL_GPIO_DeInit(GPIOA, ADC1_IN2_OPP1_Pin|ADC1_IN3_OPP2_Pin);
 
-    HAL_GPIO_DeInit(ADC1_IN11_NTC_GPIO_Port, ADC1_IN11_NTC_Pin);
+    HAL_GPIO_DeInit(GPIOB, ADC1_IN8_NTC_Pin|ADC1_IN9_OCP_Pin);
 
     /* ADC1 DMA DeInit */
     HAL_DMA_DeInit(adcHandle->DMA_Handle);
