@@ -5,24 +5,30 @@
 extern "C" {
 #endif
 
-#define APP_NAME    "AQ-DCD24"
-#define APP_VERSION "1.6"
+#define APP_NAME    "AQ-MDS24"
+#define APP_VERSION "1.0.17"
 
 #define PWM_FREQ_HZ          10000
 #define SOFT_ON_DURATION_MS  1000
 #define SOFT_OFF_DURATION_MS 1000
 
 // 驱动过流阈值
-#define OCP_THRESHOLD_A 70
+#define OCP_THRESHOLD_A 180
 
 // 驱动过温阈值
 #define OTP_NTC_THRESHOLD_CELSIUS 100
 
 // 工作压力阈值
-#define OPP_THRESHOLD_MA 10  // 10 mA
+#define OPP_WORK_TO_IDLE_THRESHOLD_MA 13.5  //  mA
+#define OPP_IDLE_TO_WORK_THRESHOLD_MA 8.5   // mA
+// #define OPP_THRESHOLD_MA 10  // 10 mA
 
 // 空闲检测时间
-#define IDLE_TIMEOUT_MS 5000
+#define IDLE_TIMEOUT_MS 6000
+
+#define IDLE_SLEEP_TIMEOUT_MS 1500
+
+#define WORK_UNDERLOAD_CURRENT_A 20
 
 // 节能模式占空比
 #define IDEL_DUTY 300

@@ -4,6 +4,7 @@
     <option name="pythonIntegrationState" value="YES" />
   </component>
   <component name="CMakeWorkspace" PROJECT_DIR="$PROJECT_DIR$" />
+  <component name="WestSettings"><![CDATA[{}]]></component>
   <component name="XMakeProjectSettings">
     <option name="currentArchitecture" value="x86" />
     <option name="workingDirectory" value="$PROJECT_DIR$" />

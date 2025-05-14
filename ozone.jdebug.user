@@ -1,0 +1,29 @@
+
+
+
+Breakpoint=E:/wibot/project/aq/aq-mds/cubemx/Core/Src/stm32g0xx_it.c:75, State=BP_STATE_ON
+Breakpoint=E:/wibot/project/aq/aq-mds/cubemx/Core/Src/stm32g0xx_it.c:89, State=BP_STATE_ON
+OpenDocument="initial.cpp", FilePath="E:/wibot/project/aq/aq-mds/libs/wibotlib4arm/src/base/initial.cpp", Line=0
+OpenDocument="app.cpp", FilePath="E:/wibot/project/aq/aq-mds/app/app.cpp", Line=105
+OpenDocument="app-framework.cpp", FilePath="E:/wibot/project/aq/aq-mds/libs/wibotlib4arm/src/app/app-framework.cpp", Line=13
+OpenDocument="stm32g0xx_it.c", FilePath="E:/wibot/project/aq/aq-mds/cubemx/Core/Src/stm32g0xx_it.c", Line=125
+OpenDocument="main.c", FilePath="E:/wibot/project/aq/aq-mds/cubemx/Core/Src/main.c", Line=61
+OpenToolbar="Debug", Floating=0, x=0, y=0
+OpenWindow="Call Stack", DockArea=BOTTOM, x=1, y=0, w=583, h=386, FilterBarShown=0, TotalValueBarShown=0, ToolBarShown=0
+OpenWindow="Registers 1", DockArea=RIGHT, x=0, y=1, w=451, h=271, FilterBarShown=0, TotalValueBarShown=0, ToolBarShown=0, FilteredItems=[], RefreshRate=1
+OpenWindow="Disassembly", DockArea=RIGHT, x=0, y=0, w=451, h=266, FilterBarShown=0, TotalValueBarShown=0, ToolBarShown=0
+OpenWindow="Global Data", DockArea=BOTTOM, x=0, y=0, w=712, h=370, TabPos=1, TopOfStack=1, FilterBarShown=0, TotalValueBarShown=0, ToolBarShown=0
+OpenWindow="Local Data", DockArea=BOTTOM, x=0, y=0, w=712, h=370, TabPos=0, TopOfStack=0, FilterBarShown=0, TotalValueBarShown=0, ToolBarShown=0
+OpenWindow="Functions", DockArea=LEFT, x=0, y=0, w=434, h=267, FilterBarShown=0, TotalValueBarShown=0, ToolBarShown=0
+OpenWindow="Call Graph", DockArea=LEFT, x=0, y=1, w=434, h=270, FilterBarShown=0, TotalValueBarShown=0, ToolBarShown=0
+OpenWindow="Terminal", DockArea=BOTTOM, x=2, y=0, w=623, h=370, TabPos=1, TopOfStack=1, FilterBarShown=0, TotalValueBarShown=0, ToolBarShown=0
+OpenWindow="Console", DockArea=BOTTOM, x=2, y=0, w=623, h=370, TabPos=0, TopOfStack=0, FilterBarShown=0, TotalValueBarShown=0, ToolBarShown=0
+SmartViewPlugin="", Page="", Toolbar="Hidden", Window="SmartView 1"
+TableHeader="Local Data", SortCol="Name", SortOrder="DESCENDING", VisibleCols=["Name";"Value";"Location";"Size";"Type";"Access";"Scope"], ColWidths=[190;170;81;41;174;83;100]
+TableHeader="Functions", SortCol="Name", SortOrder="DESCENDING", VisibleCols=["Name";"Address";"Size";"#Insts";"Class";"Source"], ColWidths=[959;100;100;100;27;238]
+TableHeader="Call Stack", SortCol="Function", SortOrder="ASCENDING", VisibleCols=["Function";"Stack Frame";"Source";"PC";"Return Address";"Stack Used"], ColWidths=[150;118;100;100;190;100]
+TableHeader="Call Graph", SortCol="Code Local", SortOrder="DESCENDING", VisibleCols=["Name";"Stack Total";"Stack Local";"Code Total";"Code Local";"Depth";"Called From"], ColWidths=[509;107;107;100;100;102;107]
+TableHeader="Power Sampling", SortCol="None", SortOrder="ASCENDING", VisibleCols=["Index";"Time";"Ch 0"], ColWidths=[100;100;100]
+TableHeader="Registers 1", SortCol="Name", SortOrder="ASCENDING", VisibleCols=["Name";"Value";"Description"], ColWidths=[149;158;175]
+TableHeader="RegisterSelectionDialog", SortCol="None", SortOrder="ASCENDING", VisibleCols=[], ColWidths=[]
+TableHeader="Global Data", SortCol="Name", SortOrder="ASCENDING", VisibleCols=["Name";"Value";"Location";"Size";"Type";"Access";"Scope"], ColWidths=[220;111;100;100;100;0;231]

@@ -54,3 +54,5 @@ dkms.conf
 *.log
 /build/
 /cmake-build-debug/
+/.cmake/
+CMakeFiles/*

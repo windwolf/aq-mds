@@ -1,0 +1,14 @@
+<component name="DebugServers">
+  <generic-debug-target name="JLink" uniqueID="54a3a84d-24bb-4397-995e-455b62c6e434" selected="true">
+    <debugger version="1">
+      <debugger kind="GDB" isBundled="true" />
+      <env />
+    </debugger>
+    <gdbserver exe="C:\Program Files\SEGGER\JLink_V810f\JLinkGDBServerCL.exe" args="-device &quot;STM32G031G8&quot; -if swd -speed AUTO -port 47850 -nogui -singlerun">
+      <env script="" />
+    </gdbserver>
+    <console port="4444" />
+    <target download-type="UPDATED_ONLY" reset-before="false" />
+    <connection extended-remote="false" remote-string="tcp::47850" />
+  </generic-debug-target>
+</component>
