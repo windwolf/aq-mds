@@ -1,3 +1,8 @@
 {
-    "elf-lens.filePath": "cmake-build-debug/AQ-DCD24.elf"
+    "elf-lens.filePath": "cmake-build-debug/AQ-DCD24.elf",
+    "files.associations": {
+        "*.lds": "linkerscript",
+        "utility": "cpp"
+    },
+    "C_Cpp.default.configurationProvider": "ms-vscode.cmake-tools",
 }

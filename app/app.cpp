@@ -39,7 +39,7 @@ bool isInitialized = false;
 
 uint16_t adcData[4]; // OPP1, OPP2, NTC, OCP
 uint16_t adcDataOffset[4];
-uint16_t adcValue[4];
+uint16_t adcValue[4]; 
 
 //constexpr static const HysteresisComparerBounds<uint16_t> wp1Bounds[1] = {{
 //    .lowBound  = WP_VALUE,
